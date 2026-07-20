@@ -1,0 +1,101 @@
+/* =========================================================
+   Design tokens — Project Management System
+   Palette: ink + warm paper background, teal signal accent
+   Type: Space Grotesk (display) / Inter (UI) / JetBrains Mono (data)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root {
+  /* ink / neutrals */
+  --ink: #14171c;
+  --ink-soft: #464b57;
+  --muted: #868c98;
+  --bg: #f4f5f1;
+  --surface: #ffffff;
+  --border: #e4e6df;
+  --line: #edeee8;
+
+  /* signal colors — reused across dashboard cards, status pills, sidebar rail */
+  --brand: #0e6b5c;
+  --brand-hover: #0a5749;
+  --brand-soft: #e2f0ec;
+
+  --amber: #b9822c;
+  --amber-soft: #f8eeda;
+
+  --slate: #3d5a80;
+  --slate-soft: #e6ecf3;
+
+  --danger: #c1443a;
+  --danger-soft: #f9e9e7;
+
+  --shadow-sm: 0 1px 2px rgba(20, 23, 28, 0.06);
+  --shadow-md: 0 8px 24px rgba(20, 23, 28, 0.08);
+  --shadow-lg: 0 24px 48px rgba(20, 23, 28, 0.16);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  color-scheme: light;
+  color: var(--ink-soft);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink-soft);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+/* focus visibility for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

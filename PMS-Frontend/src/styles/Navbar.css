@@ -1,0 +1,73 @@
+.navbar-custom {
+  height: 68px;
+  background: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+}
+.logo-title svg {
+  color: var(--brand);
+}
+.logo-title h4 {
+  margin: 0;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-box svg {
+  color: var(--muted);
+}
+.admin-box strong {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+}
+.admin-box small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.logout-btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--ink-soft);
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.logout-btn:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--danger-soft);
+}
